@@ -4,7 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagens</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root{
+    --main-color: #865126;
+    --secondary-color: #caa88b;
+}
+
+body {
+    background-color: #dddada;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    width: 10%;
+    list-style: none;
+}
+nav a{
+    justify-content: space-around;
+    text-decoration: none;
+    color: #ffe4c4;
+}
+
+.title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+.subtitle {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 1300px;
+      margin: auto;
+      background-color: var(--secondary-color);
+    }
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#Lugares {
+    background-color: var(--secondary-color);
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+table {
+    margin: auto;
+}
+
+.AgendaTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Agenda {
+    padding-top: 50px;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    padding: 5px;
+}
+
+#Reservas {
+    text-align: center;
+    font-size: 20px;
+}
+label {
+    font-size: 18px;
+}
+input {
+    font-size: 18px;
+}
+
+textarea {
+    resize: none;
+    font-size: 18px;
+}
+
+fieldset {
+    margin: auto;
+    width: 50%;
+    border: 5px solid var(--main-color);
+    background-color: var(--secondary-color);
+}
+
+button {
+    font-size: 18px;
+    border: 5px solid var(--main-color);
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    margin: 0px 50px 0 50px;
+     transition: all 0.5s;
+}
+
+button:hover {
+    box-shadow: 0px 5px 10px var(--secondary-color);
+    background-color: var(--main-color);
+    transition: all 1s;
+}
+
+
+#Contato {
+    background-color: var(--main-color);
+    text-align: center;
+    margin-top: 50px;
+    height: 100px;
+    color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+footer a:hover {
+    color: #dddada;
+}
+
+figure h3 {
+    text-align: center;
+}
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -21,31 +180,37 @@
         <section id="Lugares">
             <div class="grid">
             <figure>
+                <h3>Japão</h3>
                 <img src="https://i.pinimg.com/1200x/ac/98/33/ac9833eb194f46c1c81fd71405c21ec0.jpg" alt="Imagem de uma rua no japão" >
                 <figcaption>Japão é um ótimo lugar para você se apaixonar!</figcaption>
             </figure>
         
             <figure>
+                <h3>Inglaterra</h3>
                 <img src="https://i.pinimg.com/1200x/94/de/b3/94deb31229865db4c1e0cd24f65ada5e.jpg" alt="Imagem da ponte da inglaterra">
                 <figcaption>Inglaterra! A terra dos ingleses. Berço de grandes filmes!</figcaption>
             </figure>
         
             <figure>
+                <h3>Coreia do Sul</h3>
                 <img src="https://i.pinimg.com/1200x/03/8f/00/038f000493f12532a9b42fde060d7399.jpg" alt="Imagem de uma cena de dorama">
                 <figcaption>A terra dos doramas. Ache o seu Oppa!</figcaption>
             </figure>
        
             <figure>
+                <h3>Egito</h3>
                 <img src="https://i.pinimg.com/1200x/6d/96/a4/6d96a415c51d8ee159ea8660b96963a9.jpg" alt="Imagem do egito">
                 <figcaption>A terra dos ancestrais! Aqui o passado é o presente!</figcaption>
             </figure>
         
             <figure>
+                <h3>Israel</h3>
                 <img src="https://i.pinimg.com/736x/28/73/53/2873537863e37bf60e36e6797381f505.jpg" alt="Imagem de Israel com a bandeira" >
                 <figcaption>Escolhida por Deus, ainda tem as marcas de seu Salvador!</figcaption>
             </figure>
 
             <figure>
+                <h3>Brasil</h3>
                 <img src="https://i.pinimg.com/736x/53/c0/ea/53c0ea05d0888b542dd2f640c2e38c74.jpg" alt="Imagem de Olinda no Brasil">
                 <figcaption>O país da diversidade e riqueza!</figcaption>
             </figure>
@@ -160,7 +325,7 @@
                 <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea><br><br>
             </fieldset>
             <br>
-                <button type="submit">Submit</button>
+                <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
         </form>
         </section>
