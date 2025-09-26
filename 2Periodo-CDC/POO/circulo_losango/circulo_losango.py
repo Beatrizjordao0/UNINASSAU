@@ -1,4 +1,4 @@
-class circulo():
+class circulo:
     def __init__(self, raio, area):
         self.raio = raio
         self.area = area
@@ -7,7 +7,7 @@ class circulo():
         self.area = 3.141 * (self.raio ** 2)
         print(f"A área do círculo é: {self.area}")
     
-class losango():
+class losango:
     def __init__(self, altura, largura, area):
         self.altura = altura
         self.largura = largura

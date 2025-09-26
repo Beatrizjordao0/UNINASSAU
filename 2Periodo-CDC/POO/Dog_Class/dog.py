@@ -40,7 +40,7 @@ if __name__ == "__main__":
         "1 - Make a sound\n" \
         "2 - Show info\n" \
         "3 - Change name\n" \
-        "4 - Leave")
+        "4 - Leave\n")
 
         if action == "1":
             dog.make_sound()
