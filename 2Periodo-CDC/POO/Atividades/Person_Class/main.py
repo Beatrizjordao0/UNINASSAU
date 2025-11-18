@@ -1,5 +1,4 @@
 
-
 class Pessoa:
     def __init__(self, nome, idade, peso, altura):
         self.nome = nome
@@ -8,10 +7,15 @@ class Pessoa:
         self.altura = altura
 
     def envelhecer(self, anos):
-        for _ in range(anos):
-            self.idade += 1
+        for ano in range(anos):
             if self.idade < 21:
                 self.altura += 0.5
+                self.idade += 1
+                print(f"Sua idade agora é: {self.idade}\n"
+                      f"Sua altura é: {self.altura}")
+            else:
+                self.idade += 1
+                print(f"Sua idade agora é: {self.idade}")
 
     
     def engordar(self, kilo):

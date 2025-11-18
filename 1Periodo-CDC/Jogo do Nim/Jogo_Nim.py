@@ -1,5 +1,6 @@
 import random
 
+
 def computador_escolhe_jogada(n,m):
     if n % (m + 1) == 0: 
         return m

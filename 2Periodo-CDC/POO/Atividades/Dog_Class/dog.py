@@ -17,7 +17,7 @@ class Animal:
         self.name = new_name
 
 
-class Dog:
+class Dog(Animal):
     def __init__(self, animal):
         self.animal = animal
         self.race = input("Input the race of you dog: ")

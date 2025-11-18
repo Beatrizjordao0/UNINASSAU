@@ -13,21 +13,19 @@ class Pessoa:
         self.idade = int(input("Digite sua idade: "))
         self.data_nasc = input("Digite sua data de nascimento: ")
 
-class Aluno: 
-    def __init__(self, pessoa):
+class Aluno(Pessoa): 
+    def __init__(self):
+        Pessoa.__init__(self)
         self.matricula = int(input("Digite sua matrícula: "))
-        self.pessoa = pessoa
         
     def mostrar_info(self):
-        print(f"Nome: {self.pessoa.nome}\n"
-              f"Idade: {self.pessoa.idade}\n"
-              f"Data de Nascimento: {self.pessoa.data_nasc}\n"
+        print(f"Nome: {self.nome}\n"
+              f"Idade: {self.idade}\n"
+              f"Data de Nascimento: {self.data_nasc}\n"
               f"Matrícula: {self.matricula}\n")
 
 
-pessoa = Pessoa()
-
-aluno = Aluno(pessoa)
+aluno = Aluno()
 
 aluno.mostrar_info()
 
